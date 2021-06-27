@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="banner">Welcome to Juvoxa Healthcare Solutions</h1>
+        <div class="section editor">
+            <form>
+                <label for="login_name">username:
+                    <input id="login_name" type="text" />
+                </label>
+                <br>
+                <label for="password">password:
+                    <input id="password" type="text" />
+                </label>
+                <br>
+                <button id="login">Login</button>
+                <button id="register">Register</button>
+                <!-- <button id="create">Create</button>
+            <button id="update">Update</button>
+            <button id="delete">Delete</button>
+            <button id="reset">Reset</button> -->
+            </form>
+        </div>
+        <div class="error">
+        </div>
+    </div>
+</body>
+<script src="static/js/index.js">
+    document.getElementById("login").onclick = function () {
+        location.href = "http://192.168.64.243:5000/hospital.html";
+    };
+</script>
+
+</html>

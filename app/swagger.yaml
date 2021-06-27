@@ -1,0 +1,40 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: 1.0.0
+  title: Swagger REST Article
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+definitions:
+  HospitalList:
+    type: array
+    items:
+      type: object
+      properties:
+        hospitalId:
+          type: integer
+        hospitalName:
+          type: string
+        hospitalCity:
+          type: string
+        hospitalType:
+          type: string
+
+# Paths supported by the server application
+paths:
+  /hospitals:
+    get:
+      operationId: resources.hospital_resource.read_all
+      tags:
+        - All Hospitals
+      summary: Get List of All Hospitals
+      responses:
+        200:
+          description: Successful read operation
+          schema:
+            $ref: "#/definitions/HospitalList"
