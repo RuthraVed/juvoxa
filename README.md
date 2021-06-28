@@ -16,6 +16,12 @@ Install the project dependencies
 $ pip install -r requirements.txt
 ```
 
+Initialize the database
+
+```console
+$ python3 db_initializer.py
+```
+
 ### Run the application
 
 Run the application which will be listening on port `5000`.
