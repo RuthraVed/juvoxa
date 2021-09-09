@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 Initialize the database
 
 ```console
-$ python3 db_initializer.py
+$ python3 app/db_initializer.py
 ```
 
 ### Run the application
@@ -34,7 +34,7 @@ $ python3 app/app.py
 
 ### Please navigation to Swagger OpenAPI Documentatio instead.
 ```
-http://192.168.64.243:5000/api/ui
+http://0.0.0.0:5000/api/ui/
 ```
 
 
